@@ -96,7 +96,6 @@ def get_or_patch_user(request):
     return Response(serializer.data)
 
 
-
 class UsersViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     lookup_field = 'username'

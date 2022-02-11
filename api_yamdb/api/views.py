@@ -93,7 +93,7 @@ def get_or_patch_user(request):
         )
         serializer.is_valid(raise_exception=True)
         serializer.save()
-    return Response(serializer.data)
+        return Response(serializer.data)
 
 
 class UsersViewSet(viewsets.ModelViewSet):

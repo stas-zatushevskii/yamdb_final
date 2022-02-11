@@ -52,10 +52,9 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-        run:
-          cd api_yamdb
       - name: Push to Docker Hub
         # Пуш образа в Docker Hub
+        run: cd api_yamdb
         uses: docker/build-push-action@v2 
         with:
           push: true

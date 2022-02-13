@@ -33,7 +33,7 @@ services:
       - media_value:/var/html/media/
 
     depends_on: 
-      - web
+      - web 
  
 volumes:
   static_value:

@@ -146,3 +146,8 @@ SWAGGER_SETTINGS = {
         }
     }
 }
+
+SWAGGER_SETTINGS = {
+   'USE_SESSION_AUTH': False
+}
+ 
